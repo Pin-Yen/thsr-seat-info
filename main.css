@@ -6,10 +6,21 @@ body {
   height: 120%;
 }
 
-#header{
+#title{
   height: 50px;
   width: 99%;
   top: 0px;
+  background-color: #0dadaa;
+  color: white;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: center;
+  font-size: 16pt;
+}
+
+#header{
+  height: 50px;
+  width: 99%;
+  top: 50px;
   background-color: #0dadaa;
 }
 
@@ -17,7 +28,7 @@ body {
   bottom: 0;
   overflow-y: scroll;
   position: absolute;
-  top: 60px;
+  top: 110px;
   width: 99%;
 }
 
@@ -27,7 +38,11 @@ body {
   width: 100%;
   margin-top: 5px;
 }
-
+.header-element{
+  background-color: #0dadaa;
+  color: white;
+  font-family: 'Noto Sans TC', sans-serif;
+}
 .car-type-header {
   width: 12%;
 }
@@ -84,10 +99,10 @@ body {
 
 #footer{
 	height: 200px;
-	width: 100%;
+	width: 99%;
 	position: absolute;
 	background-color: #1a4f75;
-	bottom: -200px;
+	bottom: -205px;
 }
 
 #disclaimer, #data-source{

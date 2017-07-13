@@ -35,20 +35,20 @@ var header = document.getElementById('header');
 header.id = 'header';
 
 var trainNo = document.createElement("div");
-trainNo.className = 'cell train-no';
+trainNo.className = 'cell train-no header-element';
 trainNo.innerHTML = '車次';
 
 var deptTime = document.createElement("div")
-deptTime.className = 'cell dept-time';
+deptTime.className = 'cell dept-time header-element';
 deptTime.innerHTML = '發車時間';
 
 var dest = document.createElement("div")
-dest.className = 'cell dest';
+dest.className = 'cell dest header-element';
 dest.innerHTML = '開往';
 $(header).append(trainNo).append(deptTime).append(dest);
 
 var cartype = document.createElement("div");
-cartype.className = 'cell car-type-header';
+cartype.className = 'cell car-type-header header-element';
 $(header).append(cartype);
 
 // add station headers
