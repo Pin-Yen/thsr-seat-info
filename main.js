@@ -118,7 +118,7 @@ function updateTable(data) {
 
 function fetchData(stationId) {
   var request = new XMLHttpRequest();
-  request.open('GET',`http://ptx.transportdata.tw/MOTC/v2/Rail/THSR/AvailableSeatStatusList/${stationId}?$top=300&$format=JSON`);
+  request.open('GET',`https://ptx.transportdata.tw/MOTC/v2/Rail/THSR/AvailableSeatStatusList/${stationId}?$top=300&$format=JSON`);
 
   request.onreadystatechange = function() {
     if (request.readyState != 4 || request.status != 200) return;
