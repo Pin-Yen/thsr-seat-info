@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
+html body .container{
+	height: 100%;
+}
+ .container:before
+    {
+        content: '';
+        height: 100%;
+        float: left;
+    }
+.table-wrapper{
+	position: relative;
+    z-index: 1;
+}
+ .table-wrapper:after
+    {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+.seat-availability-wrapper{
+	height: 25px;
+	width: 72%;
+	float: left;
+}
+
+.car-type-header{
+	height: 25px;
+	width: 12%;
+	float: left;
+	background-color: #0dadaa;
+
+}
+.train-row{
+	height: 50px;
+	width: 100%;
+
+	padding-top: 5px;
+}
+.train-no{
+	height: 50px;
+	float: left;
+	width: 8%;
+	background-color: #f49118;
+}
+
+.dept-time{
+	height: 50px;
+	width: 10%;
+	float: left;
+	background-color: #f49118; 
+}
+
+.dest{
+	height: 50px;
+	width: 10%;
+	float: left;
+	background-color: #f49118; 
+}
+.station-header{
+	height: 50px;
+	width: 5%;
+	float: left;
+	text-align: center;
+	background-color: #0dadaa;
+	font-family: 'Noto Sans TC', sans-serif;
+	/*font-family: 'cwTeXMing', sans-serif;*/
+	color: white;
+}
+.station-header:hover{
+	background-color: #10a3a0;
+}
+
+.train-no-header{
+	height: 50px;
+	float: left;
+	width: 8%;
+	background-color: #0dadaa;
+}
+
+.dept-time-header{
+	height: 50px;
+	width: 10%;
+	float: left;
+	background-color: #0dadaa; 
+}
+
+.dest-header{
+	height: 50px;
+	width: 10%;
+	float: left;
+	background-color: #0dadaa; 
+}
+.car-type{
+	height: 25px;
+	width: 16.6%;
+	float: left;
+	background-color: #f49118;
+
+}
+.station{
+	height: 25px;
+	width: 6.94%;
+	float: left;
+	text-align: center;
+}
+.business{
+	background-color: #505d5e;
+}
+.standard{
+	background-color: #505d5e;
+}
+.table-header{
+	height: 50px;
+	width: 99%;
+	top: 0px;
+	position:fixed;
+	background-color: #0dadaa;
+}
+.table{
+	position: relative;
+	width: 100%;
+	margin-top: 50px;
+	/*height: 100%;*/
+	overflow: scroll;
+}
