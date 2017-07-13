@@ -81,15 +81,15 @@ function updateTable(data) {
     row.className = 'train-row';
 
     var trainNo = document.createElement("div");
-    trainNo.className = 'cell train-no';
+    trainNo.className = 'cell train-no train-info';
     trainNo.innerHTML = seats.TrainNo;
 
     var deptTime = document.createElement("div")
-    deptTime.className = 'cell dept-time';
+    deptTime.className = 'cell dept-time train-info';
     deptTime.innerHTML = seats.DepartureTime ;
 
     var dest = document.createElement("div")
-    dest.className = 'cell dest';
+    dest.className = 'cell dest train-info';
     dest.innerHTML = seats.EndingStationName['Zh_tw'];
 
     $(row).append(trainNo).append(deptTime).append(dest);
