@@ -76,6 +76,10 @@ function updateTable(data) {
     return a.DepartureTime.toString() > b.DepartureTime.toString() ? 1: -1;
   });
 
+  console.log(data.UpdateTime.slice(11,16));	
+  var updateTime = data.UpdateTime.slice(11,16);
+  var departedTrainCount = 0;
+
   data.AvailableSeats.forEach(function(seats) {
     var row = document.createElement("div");
     row.className = 'train-row';
@@ -87,6 +91,8 @@ function updateTable(data) {
     var deptTime = document.createElement("div")
     deptTime.className = 'cell dept-time train-info';
     deptTime.innerHTML = seats.DepartureTime ;
+    if (seats.DepartureTime < updateTime)
+    	++departedTrainCount;
 
     var dest = document.createElement("div")
     dest.className = 'cell dest train-info';
@@ -113,7 +119,10 @@ function updateTable(data) {
 
     $(row).append(stdWrapper).append(busWrapper);
     $('#table').append(row);
-  })
+  });
+
+  //scroll to next departure train
+  $('#table').animate({scrollTop: departedTrainCount*55}, 'slow');
 }
 
 function fetchData(stationId) {
