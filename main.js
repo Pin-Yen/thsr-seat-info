@@ -132,7 +132,7 @@ function fetchData(stationId) {
   request.onreadystatechange = function() {
     if (request.readyState != 4 || request.status != 200) return;
 
-    updateTable(JSON.parse(request.responseText)[0]);
+    updateTable(JSON.parse(request.responseText));
 
     $("body").css("cursor", "default");
     $('.station-header').css("cursor", "pointer");
